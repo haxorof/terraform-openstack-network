@@ -42,6 +42,16 @@ variable "admin_state_up" {
   default     = null
 }
 
+########
+# Router
+########
+
+variable "router" {
+  description = "Information used to create and/or connect router to subnets"
+  default = {}
+}
+
+
 #########
 # Subnets
 #########
