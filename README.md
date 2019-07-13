@@ -3,12 +3,7 @@
 [![Terraform module](https://img.shields.io/badge/dynamic/json.svg?url=https://registry.terraform.io/v1/modules/haxorof/network/openstack&label=haxorof/network/openstack&query=$.version&color=blue)](https://registry.terraform.io/modules/haxorof/network/openstack)
 ![Module downloads](https://img.shields.io/badge/dynamic/json.svg?url=https://registry.terraform.io/v1/modules/haxorof/network/openstack&label=downloads&query=$.downloads&color=green)
 
-Terraform module which creates networks including subnets on OpenStack
-
-These types of resources are supported:
-
-* [OpenStack Neutron Network v2](https://www.terraform.io/docs/providers/openstack/r/networking_network_v2.html)
-* [OpenStack Neutron Subnet v2](https://www.terraform.io/docs/providers/openstack/r/networking_subnet_v2.html)
+Terraform module which creates networks including subnets and optionally router on OpenStack.
 
 ## Features
 
