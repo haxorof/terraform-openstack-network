@@ -9,7 +9,8 @@ Terraform module which creates networks including subnets and optionally router 
 
 This modules aims to make it more compact to setup network, subnets and routers:
 
-* Create a network and defined subnets
+* Create a network and list of defined subnets
+* Support for subnet routes
 * Support creation of router if needed
 * Subnets can be connected with router in module using `@self` notation
 
@@ -29,10 +30,10 @@ module "example_net" {
   name   = "example"
   router = {
     create = true
-    external_network_name = "public"
+    external_network_name = "ext-net"
   }
   subnets = [
-    { cidr = "192.168.1.0/24", ip_version = 4, router_id = "@self" },
+    { cidr = "192.168.1.0/24", router_id = "@self" },
   ]
 }
 ```

@@ -48,7 +48,7 @@ variable "admin_state_up" {
 
 variable "router" {
   description = "Information used to create and/or connect router to subnets"
-  default = {}
+  default     = {}
 }
 
 
@@ -57,6 +57,6 @@ variable "router" {
 #########
 variable "subnets" {
   description = "List of subnets"
-  type        = list(map(string))
+  type        = list
   default     = []
 }
