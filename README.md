@@ -16,7 +16,7 @@ This modules aims to make it more compact to setup network, subnets and routers:
 
 ## Terraform versions
 
-Terraform 0.12.
+Terraform 0.13.
 
 ## Usage
 
